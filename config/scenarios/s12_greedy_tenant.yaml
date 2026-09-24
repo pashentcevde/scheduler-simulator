@@ -1,0 +1,18 @@
+# Одна команда пытается забрать кластер.
+#
+# team-b подаёт задачи втрое интенсивнее остальных и на высоких приоритетах.
+# Проверяется, удерживают ли borrowingLimit и номинальные квоты остальных
+# от голодания: смотреть завершённые задачи и wait_p90 по КОМАНДАМ, а не
+# в среднем — среднее здесь скрывает всю картину.
+name: s12_greedy_tenant
+description: Агрессивный арендатор против квот когорты
+seed: 31337
+time_scale: 240
+duration_sim_minutes: 600
+max_jobs: 450
+tenants_preset: standard
+tenant_overrides:
+  b:
+    arrival_per_sim_hour: 9.9
+    priority_mix: {production: 0.4, high: 0.4, normal: 0.2}
+    oversize_prob: 0.6

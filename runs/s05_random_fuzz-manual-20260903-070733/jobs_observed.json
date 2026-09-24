@@ -1,0 +1,42 @@
+{
+ "b-0000-070733": {
+  "first_seen_running_ts": 1788408463.3478904,
+  "pod_start_ts": 1788408462.0,
+  "node": "gpu-h100-1",
+  "actual_pool": "h100",
+  "name": "b-0000-070733",
+  "namespace": "team-b",
+  "tenant": "b",
+  "model": "gemma-2-27b-it",
+  "profile": "eval",
+  "requested_pool": "h100",
+  "placement_policy": "manual",
+  "min_pool": "a100-80",
+  "vram_gb": 64.12,
+  "planned_duration_s": 35.5,
+  "gpus": 1.0,
+  "created_ts": 1788408462.0,
+  "first_seen_ts": 1788408463.3478904,
+  "start_ts": 1788408462.0
+ },
+ "b-0001-070733": {
+  "first_seen_running_ts": 1788408465.348407,
+  "pod_start_ts": 1788408464.0,
+  "node": "gpu-t4-0",
+  "actual_pool": "t4",
+  "name": "b-0001-070733",
+  "namespace": "team-b",
+  "tenant": "b",
+  "model": "qwen2.5-14b-instruct",
+  "profile": "eval",
+  "requested_pool": "t4",
+  "placement_policy": "manual",
+  "min_pool": "t4",
+  "vram_gb": 24.09,
+  "planned_duration_s": 38.925,
+  "gpus": 2.0,
+  "created_ts": 1788408464.0,
+  "first_seen_ts": 1788408465.348407,
+  "start_ts": 1788408464.0
+ }
+}

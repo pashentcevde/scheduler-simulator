@@ -1,0 +1,139 @@
+presets:
+  standard:
+    - id: a
+      arrival_per_sim_hour: 3.3
+      priority_mix: {production: 0.5, high: 0.3, normal: 0.2}
+      oversize_prob: 0.35
+      undersize_prob: 0.05
+      model_mix:
+        qwen2.5-7b-instruct: 0.28
+        llama-3.1-8b-instruct: 0.25
+        qwen2.5-14b-instruct: 0.2
+        qwen2.5-32b-instruct: 0.12
+        mixtral-8x7b-instruct: 0.07
+        llama-3.3-70b-instruct: 0.08
+      profile_mix: {smoke: 0.15, eval: 0.25, serving-session: 0.5, long-serving: 0.1}
+
+    - id: b
+      arrival_per_sim_hour: 3.3
+      priority_mix: {high: 0.3, normal: 0.5, low: 0.2}
+      oversize_prob: 0.45
+      undersize_prob: 0.1
+      model_mix:
+        qwen2.5-7b-instruct: 0.3
+        mistral-nemo-12b: 0.2
+        qwen2.5-14b-instruct: 0.2
+        gemma-2-27b-it: 0.12
+        deepseek-r1-distill-qwen-32b: 0.12
+        llama-3.3-70b-instruct: 0.06
+      profile_mix: {smoke: 0.2, eval: 0.5, serving-session: 0.25, long-serving: 0.05}
+
+    - id: c
+      arrival_per_sim_hour: 2.3
+      priority_mix: {normal: 0.3, low: 0.7}
+      oversize_prob: 0.25
+      undersize_prob: 0.05
+      model_mix:
+        qwen2.5-7b-instruct: 0.4
+        llama-3.1-8b-instruct: 0.3
+        qwen2.5-32b-instruct: 0.2
+        mixtral-8x7b-instruct: 0.1
+      profile_mix: {smoke: 0.15, eval: 0.6, serving-session: 0.25}
+
+  small_models:
+    - id: a
+      arrival_per_sim_hour: 5.8
+      priority_mix: {production: 0.4, high: 0.3, normal: 0.3}
+      oversize_prob: 0.4
+      undersize_prob: 0.05
+      model_mix:
+        qwen2.5-7b-instruct: 0.5
+        llama-3.1-8b-instruct: 0.3
+        mistral-nemo-12b: 0.2
+      profile_mix: {smoke: 0.2, eval: 0.3, serving-session: 0.4, long-serving: 0.1}
+    - id: b
+      arrival_per_sim_hour: 5.8
+      priority_mix: {high: 0.2, normal: 0.5, low: 0.3}
+      oversize_prob: 0.5
+      undersize_prob: 0.1
+      model_mix:
+        qwen2.5-7b-instruct: 0.4
+        llama-3.1-8b-instruct: 0.3
+        qwen2.5-14b-instruct: 0.3
+      profile_mix: {smoke: 0.3, eval: 0.5, serving-session: 0.2}
+    - id: c
+      arrival_per_sim_hour: 3.3
+      priority_mix: {normal: 0.4, low: 0.6}
+      oversize_prob: 0.3
+      undersize_prob: 0.05
+      model_mix:
+        qwen2.5-7b-instruct: 0.6
+        llama-3.1-8b-instruct: 0.4
+      profile_mix: {smoke: 0.2, eval: 0.8}
+
+  heavy_tail:
+    - id: a
+      arrival_per_sim_hour: 1.2
+      priority_mix: {production: 0.6, high: 0.4}
+      oversize_prob: 0.2
+      undersize_prob: 0.0
+      model_mix:
+        llama-3.3-70b-instruct: 0.6
+        mixtral-8x7b-instruct: 0.25
+        qwen2.5-32b-instruct: 0.15
+      profile_mix: {eval: 0.3, serving-session: 0.4, long-serving: 0.3}
+    - id: b
+      arrival_per_sim_hour: 8.2
+      priority_mix: {normal: 0.6, low: 0.4}
+      oversize_prob: 0.3
+      undersize_prob: 0.1
+      model_mix:
+        qwen2.5-7b-instruct: 0.5
+        llama-3.1-8b-instruct: 0.3
+        qwen2.5-14b-instruct: 0.2
+      profile_mix: {smoke: 0.3, eval: 0.6, serving-session: 0.1}
+    - id: c
+      arrival_per_sim_hour: 5.8
+      priority_mix: {normal: 0.3, low: 0.7}
+      oversize_prob: 0.2
+      undersize_prob: 0.05
+      model_mix:
+        qwen2.5-7b-instruct: 0.4
+        qwen2.5-32b-instruct: 0.3
+        gemma-2-27b-it: 0.3
+      profile_mix: {smoke: 0.2, eval: 0.7, serving-session: 0.1}
+
+  sloppy:
+    - id: a
+      arrival_per_sim_hour: 3.3
+      priority_mix: {production: 0.4, high: 0.3, normal: 0.3}
+      oversize_prob: 0.05
+      undersize_prob: 0.55
+      model_mix:
+        qwen2.5-14b-instruct: 0.25
+        qwen2.5-32b-instruct: 0.25
+        gemma-2-27b-it: 0.2
+        mixtral-8x7b-instruct: 0.15
+        llama-3.3-70b-instruct: 0.15
+      profile_mix: {smoke: 0.2, eval: 0.4, serving-session: 0.4}
+    - id: b
+      arrival_per_sim_hour: 3.3
+      priority_mix: {high: 0.2, normal: 0.5, low: 0.3}
+      oversize_prob: 0.05
+      undersize_prob: 0.6
+      model_mix:
+        qwen2.5-7b-instruct: 0.2
+        qwen2.5-14b-instruct: 0.2
+        deepseek-r1-distill-qwen-32b: 0.3
+        mixtral-8x7b-instruct: 0.3
+      profile_mix: {smoke: 0.3, eval: 0.5, serving-session: 0.2}
+    - id: c
+      arrival_per_sim_hour: 2.3
+      priority_mix: {normal: 0.3, low: 0.7}
+      oversize_prob: 0.1
+      undersize_prob: 0.4
+      model_mix:
+        qwen2.5-7b-instruct: 0.4
+        qwen2.5-32b-instruct: 0.35
+        gemma-2-27b-it: 0.25
+      profile_mix: {smoke: 0.2, eval: 0.6, serving-session: 0.2}

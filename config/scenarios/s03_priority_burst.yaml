@@ -1,0 +1,23 @@
+# Всплеск прод-нагрузки поверх фоновой.
+#
+# Сначала team-c набивает кластер дешёвой фоновой нагрузкой, затем приходит
+# волна production-задач team-a. Метрики интереса: wait_p90 для priority
+# production и число вытеснений. Для рекомендателя: успевает ли queue-aware
+# увести прод на свободные карты вместо того, чтобы вытеснять чужое.
+name: s03_priority_burst
+description: Фоновая batch-нагрузка, затем всплеск production-инференса
+seed: 1337
+time_scale: 240
+duration_sim_minutes: 480
+max_jobs: 300
+tenants_preset: standard
+phases:
+  - from_sim_minute: 0
+    to_sim_minute: 120
+    rates: {a: 0.2, b: 1.5, c: 3.0}
+  - from_sim_minute: 120
+    to_sim_minute: 240
+    rates: {a: 4.5, b: 0.5, c: 0.5}
+  - from_sim_minute: 240
+    to_sim_minute: 480
+    rates: {a: 1.0, b: 1.0, c: 1.0}

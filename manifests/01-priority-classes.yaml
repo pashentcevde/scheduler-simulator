@@ -1,0 +1,28 @@
+---
+apiVersion: kueue.x-k8s.io/v1beta2
+kind: WorkloadPriorityClass
+metadata:
+  name: production
+value: 1000
+description: "Прод. Может вытеснять всё, что ниже."
+---
+apiVersion: kueue.x-k8s.io/v1beta2
+kind: WorkloadPriorityClass
+metadata:
+  name: high
+value: 500
+description: "Важные, но не прод-задачи: срочные эксперименты, демо, заказчик."
+---
+apiVersion: kueue.x-k8s.io/v1beta2
+kind: WorkloadPriorityClass
+metadata:
+  name: normal
+value: 100
+description: "Обычная фоновая нагрузка команды."
+---
+apiVersion: kueue.x-k8s.io/v1beta2
+kind: WorkloadPriorityClass
+metadata:
+  name: low
+value: 10
+description: "Batch/offline, терпит ожидание и вытеснение."

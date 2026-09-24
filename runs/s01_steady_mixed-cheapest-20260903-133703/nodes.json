@@ -1,0 +1,110 @@
+{
+ "gpu-a100-40-0": {
+  "pool": "a100-40",
+  "product": "NVIDIA-A100-PCIE-40GB",
+  "gpu_capacity": 2,
+  "cpu_capacity": 24.0
+ },
+ "gpu-a100-40-1": {
+  "pool": "a100-40",
+  "product": "NVIDIA-A100-PCIE-40GB",
+  "gpu_capacity": 2,
+  "cpu_capacity": 24.0
+ },
+ "gpu-a100-40-2": {
+  "pool": "a100-40",
+  "product": "NVIDIA-A100-PCIE-40GB",
+  "gpu_capacity": 2,
+  "cpu_capacity": 24.0
+ },
+ "gpu-a100-80-0": {
+  "pool": "a100-80",
+  "product": "NVIDIA-A100-SXM4-80GB",
+  "gpu_capacity": 2,
+  "cpu_capacity": 24.0
+ },
+ "gpu-a100-80-1": {
+  "pool": "a100-80",
+  "product": "NVIDIA-A100-SXM4-80GB",
+  "gpu_capacity": 2,
+  "cpu_capacity": 24.0
+ },
+ "gpu-a100-80-2": {
+  "pool": "a100-80",
+  "product": "NVIDIA-A100-SXM4-80GB",
+  "gpu_capacity": 2,
+  "cpu_capacity": 24.0
+ },
+ "gpu-h100-0": {
+  "pool": "h100",
+  "product": "NVIDIA-H100-80GB-HBM3",
+  "gpu_capacity": 4,
+  "cpu_capacity": 40.0
+ },
+ "gpu-h100-1": {
+  "pool": "h100",
+  "product": "NVIDIA-H100-80GB-HBM3",
+  "gpu_capacity": 4,
+  "cpu_capacity": 40.0
+ },
+ "gpu-l4-0": {
+  "pool": "l4",
+  "product": "NVIDIA-L4",
+  "gpu_capacity": 2,
+  "cpu_capacity": 24.0
+ },
+ "gpu-l4-1": {
+  "pool": "l4",
+  "product": "NVIDIA-L4",
+  "gpu_capacity": 2,
+  "cpu_capacity": 24.0
+ },
+ "gpu-l4-2": {
+  "pool": "l4",
+  "product": "NVIDIA-L4",
+  "gpu_capacity": 2,
+  "cpu_capacity": 24.0
+ },
+ "gpu-l4-3": {
+  "pool": "l4",
+  "product": "NVIDIA-L4",
+  "gpu_capacity": 2,
+  "cpu_capacity": 24.0
+ },
+ "gpu-l4-4": {
+  "pool": "l4",
+  "product": "NVIDIA-L4",
+  "gpu_capacity": 2,
+  "cpu_capacity": 24.0
+ },
+ "gpu-t4-0": {
+  "pool": "t4",
+  "product": "NVIDIA-T4",
+  "gpu_capacity": 2,
+  "cpu_capacity": 24.0
+ },
+ "gpu-t4-1": {
+  "pool": "t4",
+  "product": "NVIDIA-T4",
+  "gpu_capacity": 2,
+  "cpu_capacity": 24.0
+ },
+ "gpu-t4-2": {
+  "pool": "t4",
+  "product": "NVIDIA-T4",
+  "gpu_capacity": 2,
+  "cpu_capacity": 24.0
+ },
+ "gpu-t4-3": {
+  "pool": "t4",
+  "product": "NVIDIA-T4",
+  "gpu_capacity": 2,
+  "cpu_capacity": 24.0
+ },
+ "gpu-t4-4": {
+  "pool": "t4",
+  "product": "NVIDIA-T4",
+  "gpu_capacity": 2,
+  "cpu_capacity": 24.0
+ }
+}

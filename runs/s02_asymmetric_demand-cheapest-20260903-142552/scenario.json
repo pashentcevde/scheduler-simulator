@@ -1,0 +1,104 @@
+{
+ "name": "s02_asymmetric_demand",
+ "description": "Дневной пик team-a, ночной пик team-b",
+ "seed": 7,
+ "time_scale": 240,
+ "duration_sim_minutes": 1440,
+ "max_jobs": 500,
+ "tenants_preset": "standard",
+ "phases": [
+  {
+   "from_sim_minute": 0,
+   "to_sim_minute": 720,
+   "rates": {
+    "a": 1.9,
+    "b": 0.3,
+    "c": 0.8
+   }
+  },
+  {
+   "from_sim_minute": 720,
+   "to_sim_minute": 1440,
+   "rates": {
+    "a": 0.3,
+    "b": 1.9,
+    "c": 0.8
+   }
+  }
+ ],
+ "tenants": [
+  {
+   "id": "a",
+   "arrival_per_sim_hour": 3.3,
+   "priority_mix": {
+    "production": 0.5,
+    "high": 0.3,
+    "normal": 0.2
+   },
+   "oversize_prob": 0.35,
+   "undersize_prob": 0.05,
+   "model_mix": {
+    "qwen2.5-7b-instruct": 0.28,
+    "llama-3.1-8b-instruct": 0.25,
+    "qwen2.5-14b-instruct": 0.2,
+    "qwen2.5-32b-instruct": 0.12,
+    "mixtral-8x7b-instruct": 0.07,
+    "llama-3.3-70b-instruct": 0.08
+   },
+   "profile_mix": {
+    "smoke": 0.15,
+    "eval": 0.25,
+    "serving-session": 0.5,
+    "long-serving": 0.1
+   }
+  },
+  {
+   "id": "b",
+   "arrival_per_sim_hour": 3.3,
+   "priority_mix": {
+    "high": 0.3,
+    "normal": 0.5,
+    "low": 0.2
+   },
+   "oversize_prob": 0.45,
+   "undersize_prob": 0.1,
+   "model_mix": {
+    "qwen2.5-7b-instruct": 0.3,
+    "mistral-nemo-12b": 0.2,
+    "qwen2.5-14b-instruct": 0.2,
+    "gemma-2-27b-it": 0.12,
+    "deepseek-r1-distill-qwen-32b": 0.12,
+    "llama-3.3-70b-instruct": 0.06
+   },
+   "profile_mix": {
+    "smoke": 0.2,
+    "eval": 0.5,
+    "serving-session": 0.25,
+    "long-serving": 0.05
+   }
+  },
+  {
+   "id": "c",
+   "arrival_per_sim_hour": 2.3,
+   "priority_mix": {
+    "normal": 0.3,
+    "low": 0.7
+   },
+   "oversize_prob": 0.25,
+   "undersize_prob": 0.05,
+   "model_mix": {
+    "qwen2.5-7b-instruct": 0.4,
+    "llama-3.1-8b-instruct": 0.3,
+    "qwen2.5-32b-instruct": 0.2,
+    "mixtral-8x7b-instruct": 0.1
+   },
+   "profile_mix": {
+    "smoke": 0.15,
+    "eval": 0.6,
+    "serving-session": 0.25
+   }
+  }
+ ],
+ "placement": "cheapest",
+ "oom_retry_limit": 0
+}

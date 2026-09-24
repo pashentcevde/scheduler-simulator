@@ -1,0 +1,177 @@
+{
+ "run": "s05_random_fuzz-queue-aware-20260903-111807",
+ "scenario": "s05_random_fuzz",
+ "placement": "queue-aware",
+ "time_scale": 480.0,
+ "wall_seconds": 300.1,
+ "sim_hours": 40.019,
+ "gpu_capacity": 40.0,
+ "jobs_submitted": 248,
+ "jobs_started": 248,
+ "jobs_completed": 234,
+ "starved_jobs": 0,
+ "throughput_per_sim_hour": 5.85,
+ "wait_p50_sim_min": 8.0,
+ "wait_p90_sim_min": 626.4,
+ "wait_p99_sim_min": 1108.72,
+ "wait_mean_sim_min": 148.48,
+ "wait_total_sim_hours": 613.73,
+ "wait_over_threshold": {
+  "5": 169,
+  "15": 122,
+  "30": 95,
+  "60": 74,
+  "120": 64
+ },
+ "wait_hours_per_completed_job": 2.6228,
+ "gpu_utilization_mean": 0.4943,
+ "gpu_utilization_p90": 0.75,
+ "gpu_hours_allocated": 790.93,
+ "gpu_hours_available": 1600.75,
+ "idle_gpu_hours": 809.82,
+ "borrowed_gpu_hours": 251.33,
+ "queue_depth_mean": 19.07,
+ "queue_depth_max": 41,
+ "frag_free_on_busy_mean": 5.56,
+ "preemptions": 65,
+ "eviction_reasons": {
+  "Preempted": 38
+ },
+ "cost_units": 2355.2,
+ "optimal_cost_units": 2101.6,
+ "planned_cost_units": 2331.0,
+ "preemption_wasted_cost_units": 24.2,
+ "cost_overhead_pct": 10.9,
+ "wasted_vram_gb_hours": 10277.1,
+ "oversized_jobs_pct": 35.1,
+ "oom_jobs": 14,
+ "oom_pct": 5.6,
+ "oom_wasted_gpu_hours": 3.37,
+ "oom_retries": 0,
+ "oom_vs_confidence": {
+  "threshold": 0.85,
+  "oom_confidence_mean": 0.742,
+  "oom_confidence_median": 0.758,
+  "oom_confidence_min": 0.644,
+  "oom_confidence_max": 0.798,
+  "ok_confidence_mean": 0.973,
+  "oom_below_threshold": 14,
+  "oom_above_threshold": 0,
+  "oom_recall_at_threshold": 100.0,
+  "risky_placements": 38,
+  "risky_precision_pct": 36.8,
+  "false_rejects": 24,
+  "predicted_oom_pct": 4.0,
+  "actual_oom_pct": 5.6,
+  "buckets": {
+   "0.6": {
+    "jobs": 3,
+    "oom": 1,
+    "actual_success": 0.667,
+    "predicted_success": 0.6
+   },
+   "0.7": {
+    "jobs": 13,
+    "oom": 6,
+    "actual_success": 0.538,
+    "predicted_success": 0.7
+   },
+   "0.8": {
+    "jobs": 22,
+    "oom": 7,
+    "actual_success": 0.682,
+    "predicted_success": 0.8
+   },
+   "0.9": {
+    "jobs": 6,
+    "oom": 0,
+    "actual_success": 1.0,
+    "predicted_success": 0.9
+   },
+   "1.0": {
+    "jobs": 204,
+    "oom": 0,
+    "actual_success": 1.0,
+    "predicted_success": 1.0
+   }
+  }
+ },
+ "efficiency_score_mean": 0.717,
+ "memory_score_mean": 0.652,
+ "power_score_mean": 0.567,
+ "underutilized_gpu_hours": 241.07,
+ "efficiency_score_weighted": 0.695,
+ "policy_changed_pct": 50.4,
+ "confidence_mean": 0.96,
+ "risky_placements_pct": 15.3,
+ "gpu_hours_by_pool": {
+  "a100-80": 99.45,
+  "t4": 286.54,
+  "a100-40": 83.45,
+  "l4": 227.21,
+  "h100": 72.55
+ },
+ "per_tenant": {
+  "a": {
+   "submitted": 110,
+   "completed": 103,
+   "starved": 0,
+   "wait_p50_sim_min": 8.0,
+   "wait_p90_sim_min": 487.2,
+   "wait_total_sim_hours": 234.0,
+   "gpu_hours": 383.87
+  },
+  "b": {
+   "submitted": 69,
+   "completed": 65,
+   "starved": 0,
+   "wait_p50_sim_min": 8.0,
+   "wait_p90_sim_min": 273.6,
+   "wait_total_sim_hours": 100.53,
+   "gpu_hours": 221.73
+  },
+  "c": {
+   "submitted": 69,
+   "completed": 66,
+   "starved": 0,
+   "wait_p50_sim_min": 48.0,
+   "wait_p90_sim_min": 851.2,
+   "wait_total_sim_hours": 279.2,
+   "gpu_hours": 163.6
+  }
+ },
+ "per_priority": {
+  "high": {
+   "submitted": 49,
+   "completed": 47,
+   "wait_p50_sim_min": 8.0,
+   "wait_p90_sim_min": 56.0,
+   "wait_p99_sim_min": 188.8,
+   "wait_total_sim_hours": 16.67
+  },
+  "low": {
+   "submitted": 55,
+   "completed": 51,
+   "wait_p50_sim_min": 176.0,
+   "wait_p90_sim_min": 980.8,
+   "wait_p99_sim_min": 1129.12,
+   "wait_total_sim_hours": 316.67
+  },
+  "normal": {
+   "submitted": 96,
+   "completed": 91,
+   "wait_p50_sim_min": 16.0,
+   "wait_p90_sim_min": 640.0,
+   "wait_p99_sim_min": 1124.4,
+   "wait_total_sim_hours": 273.07
+  },
+  "production": {
+   "submitted": 48,
+   "completed": 45,
+   "wait_p50_sim_min": 8.0,
+   "wait_p90_sim_min": 16.0,
+   "wait_p99_sim_min": 72.96,
+   "wait_total_sim_hours": 7.33
+  }
+ }
+}

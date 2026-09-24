@@ -1,0 +1,69 @@
+---
+apiVersion: kueue.x-k8s.io/v1beta2
+kind: ResourceFlavor
+metadata:
+  name: gpu-t4
+spec:
+  nodeLabels:
+    nvidia.com/gpu.product: NVIDIA-T4
+  tolerations:
+  - key: kwok.x-k8s.io/node
+    operator: Equal
+    value: fake
+    effect: NoSchedule
+
+---
+apiVersion: kueue.x-k8s.io/v1beta2
+kind: ResourceFlavor
+metadata:
+  name: gpu-l4
+spec:
+  nodeLabels:
+    nvidia.com/gpu.product: NVIDIA-L4
+  tolerations:
+  - key: kwok.x-k8s.io/node
+    operator: Equal
+    value: fake
+    effect: NoSchedule
+
+---
+apiVersion: kueue.x-k8s.io/v1beta2
+kind: ResourceFlavor
+metadata:
+  name: gpu-a100-40
+spec:
+  nodeLabels:
+    nvidia.com/gpu.product: NVIDIA-A100-PCIE-40GB
+  tolerations:
+  - key: kwok.x-k8s.io/node
+    operator: Equal
+    value: fake
+    effect: NoSchedule
+
+---
+apiVersion: kueue.x-k8s.io/v1beta2
+kind: ResourceFlavor
+metadata:
+  name: gpu-a100-80
+spec:
+  nodeLabels:
+    nvidia.com/gpu.product: NVIDIA-A100-SXM4-80GB
+  tolerations:
+  - key: kwok.x-k8s.io/node
+    operator: Equal
+    value: fake
+    effect: NoSchedule
+
+---
+apiVersion: kueue.x-k8s.io/v1beta2
+kind: ResourceFlavor
+metadata:
+  name: gpu-h100
+spec:
+  nodeLabels:
+    nvidia.com/gpu.product: NVIDIA-H100-80GB-HBM3
+  tolerations:
+  - key: kwok.x-k8s.io/node
+    operator: Equal
+    value: fake
+    effect: NoSchedule

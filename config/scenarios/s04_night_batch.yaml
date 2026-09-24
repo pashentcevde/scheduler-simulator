@@ -1,0 +1,20 @@
+# Ночной batch на заимствованных ресурсах.
+#
+# Раньше эту роль играла очередь-песочница; теперь то же самое делает team-c
+# со своим маленьким nominalQuota и большим borrowingLimit. Ночью она
+# выгребает простаивающий кластер, утром отдаёт ресурсы обратно.
+# Метрики: borrowed_gpu_hours, preemptions, время реакции на приход прода.
+name: s04_night_batch
+description: Ночной batch team-c и утренний reclaim прод-очередью
+seed: 99
+time_scale: 240
+duration_sim_minutes: 600
+max_jobs: 300
+tenants_preset: standard
+phases:
+  - from_sim_minute: 0      # "ночь"
+    to_sim_minute: 240
+    rates: {a: 0.1, b: 0.3, c: 5.0}
+  - from_sim_minute: 240    # "утро"
+    to_sim_minute: 600
+    rates: {a: 3.5, b: 1.5, c: 0.8}

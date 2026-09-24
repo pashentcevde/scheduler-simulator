@@ -1,0 +1,177 @@
+{
+ "run": "s02_asymmetric_demand-queue-aware-20260903-144122",
+ "scenario": "s02_asymmetric_demand",
+ "placement": "queue-aware",
+ "time_scale": 240.0,
+ "wall_seconds": 674.9,
+ "sim_hours": 44.994,
+ "gpu_capacity": 40.0,
+ "jobs_submitted": 229,
+ "jobs_started": 229,
+ "jobs_completed": 220,
+ "starved_jobs": 0,
+ "throughput_per_sim_hour": 4.89,
+ "wait_p50_sim_min": 0.0,
+ "wait_p90_sim_min": 68.8,
+ "wait_p99_sim_min": 1272.8,
+ "wait_mean_sim_min": 62.64,
+ "wait_total_sim_hours": 239.07,
+ "wait_over_threshold": {
+  "5": 66,
+  "15": 53,
+  "30": 42,
+  "60": 25,
+  "120": 18
+ },
+ "wait_hours_per_completed_job": 1.0867,
+ "gpu_utilization_mean": 0.3905,
+ "gpu_utilization_p90": 0.75,
+ "gpu_hours_allocated": 702.67,
+ "gpu_hours_available": 1799.77,
+ "idle_gpu_hours": 1097.1,
+ "borrowed_gpu_hours": 251.67,
+ "queue_depth_mean": 6.01,
+ "queue_depth_max": 16,
+ "frag_free_on_busy_mean": 4.99,
+ "preemptions": 40,
+ "eviction_reasons": {
+  "Preempted": 24
+ },
+ "cost_units": 2137.3,
+ "optimal_cost_units": 1867.2,
+ "planned_cost_units": 2170.5,
+ "preemption_wasted_cost_units": 0.0,
+ "cost_overhead_pct": 16.2,
+ "wasted_vram_gb_hours": 9474.4,
+ "oversized_jobs_pct": 34.5,
+ "oom_jobs": 9,
+ "oom_pct": 3.9,
+ "oom_wasted_gpu_hours": 2.42,
+ "oom_retries": 0,
+ "oom_vs_confidence": {
+  "threshold": 0.85,
+  "oom_confidence_mean": 0.763,
+  "oom_confidence_median": 0.771,
+  "oom_confidence_min": 0.644,
+  "oom_confidence_max": 0.95,
+  "ok_confidence_mean": 0.978,
+  "oom_below_threshold": 8,
+  "oom_above_threshold": 1,
+  "oom_recall_at_threshold": 88.9,
+  "risky_placements": 26,
+  "risky_precision_pct": 30.8,
+  "false_rejects": 18,
+  "predicted_oom_pct": 3.1,
+  "actual_oom_pct": 3.9,
+  "buckets": {
+   "0.6": {
+    "jobs": 4,
+    "oom": 2,
+    "actual_success": 0.5,
+    "predicted_success": 0.6
+   },
+   "0.7": {
+    "jobs": 6,
+    "oom": 2,
+    "actual_success": 0.667,
+    "predicted_success": 0.7
+   },
+   "0.8": {
+    "jobs": 16,
+    "oom": 4,
+    "actual_success": 0.75,
+    "predicted_success": 0.8
+   },
+   "0.9": {
+    "jobs": 8,
+    "oom": 1,
+    "actual_success": 0.875,
+    "predicted_success": 0.9
+   },
+   "1.0": {
+    "jobs": 195,
+    "oom": 0,
+    "actual_success": 1.0,
+    "predicted_success": 1.0
+   }
+  }
+ },
+ "efficiency_score_mean": 0.696,
+ "memory_score_mean": 0.624,
+ "power_score_mean": 0.53,
+ "underutilized_gpu_hours": 232.3,
+ "efficiency_score_weighted": 0.669,
+ "policy_changed_pct": 48.9,
+ "confidence_mean": 0.969,
+ "risky_placements_pct": 11.4,
+ "gpu_hours_by_pool": {
+  "l4": 193.59,
+  "t4": 208.86,
+  "a100-40": 84.45,
+  "a100-80": 118.93,
+  "h100": 53.2
+ },
+ "per_tenant": {
+  "a": {
+   "submitted": 103,
+   "completed": 96,
+   "starved": 0,
+   "wait_p50_sim_min": 0.0,
+   "wait_p90_sim_min": 53.6,
+   "wait_total_sim_hours": 53.27,
+   "gpu_hours": 358.07
+  },
+  "b": {
+   "submitted": 84,
+   "completed": 83,
+   "starved": 0,
+   "wait_p50_sim_min": 0.0,
+   "wait_p90_sim_min": 58.8,
+   "wait_total_sim_hours": 87.2,
+   "gpu_hours": 213.67
+  },
+  "c": {
+   "submitted": 42,
+   "completed": 41,
+   "starved": 0,
+   "wait_p50_sim_min": 0.0,
+   "wait_p90_sim_min": 108.0,
+   "wait_total_sim_hours": 98.6,
+   "gpu_hours": 87.33
+  }
+ },
+ "per_priority": {
+  "high": {
+   "submitted": 65,
+   "completed": 62,
+   "wait_p50_sim_min": 0.0,
+   "wait_p90_sim_min": 31.2,
+   "wait_p99_sim_min": 804.8,
+   "wait_total_sim_hours": 52.4
+  },
+  "low": {
+   "submitted": 45,
+   "completed": 44,
+   "wait_p50_sim_min": 16.0,
+   "wait_p90_sim_min": 181.6,
+   "wait_p99_sim_min": 2037.12,
+   "wait_total_sim_hours": 114.13
+  },
+  "normal": {
+   "submitted": 75,
+   "completed": 72,
+   "wait_p50_sim_min": 0.0,
+   "wait_p90_sim_min": 181.6,
+   "wait_p99_sim_min": 637.28,
+   "wait_total_sim_hours": 69.67
+  },
+  "production": {
+   "submitted": 44,
+   "completed": 42,
+   "wait_p50_sim_min": 0.0,
+   "wait_p90_sim_min": 8.0,
+   "wait_p99_sim_min": 36.56,
+   "wait_total_sim_hours": 2.87
+  }
+ }
+}

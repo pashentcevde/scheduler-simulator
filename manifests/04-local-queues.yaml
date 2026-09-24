@@ -1,0 +1,26 @@
+---
+apiVersion: kueue.x-k8s.io/v1beta2
+kind: LocalQueue
+metadata:
+  name: team-a
+  namespace: team-a
+spec:
+  clusterQueue: team-a
+
+---
+apiVersion: kueue.x-k8s.io/v1beta2
+kind: LocalQueue
+metadata:
+  name: team-b
+  namespace: team-b
+spec:
+  clusterQueue: team-b
+
+---
+apiVersion: kueue.x-k8s.io/v1beta2
+kind: LocalQueue
+metadata:
+  name: team-c
+  namespace: team-c
+spec:
+  clusterQueue: team-c

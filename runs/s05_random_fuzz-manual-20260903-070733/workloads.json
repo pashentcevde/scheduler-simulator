@@ -1,0 +1,36 @@
+{
+ "team-b/job-b-0000-070733-c623e": {
+  "namespace": "team-b",
+  "name": "job-b-0000-070733-c623e",
+  "job_id": "b-0000-070733",
+  "queue": "team-b",
+  "priority": 100,
+  "priority_class": "normal",
+  "created_ts": 1788408462.0,
+  "first_seen_ts": 1788408463.3478904,
+  "gpus": 1.0,
+  "cluster_queue": "team-b",
+  "flavor": "gpu-h100",
+  "quota_reserved_ts": 1788408462.0,
+  "admitted_ts": 1788408462.0,
+  "evictions": 0,
+  "eviction_reasons": []
+ },
+ "team-b/job-b-0001-070733-56c3f": {
+  "namespace": "team-b",
+  "name": "job-b-0001-070733-56c3f",
+  "job_id": "b-0001-070733",
+  "queue": "team-b",
+  "priority": 100,
+  "priority_class": "normal",
+  "created_ts": 1788408464.0,
+  "first_seen_ts": 1788408465.348407,
+  "gpus": 2.0,
+  "cluster_queue": "team-b",
+  "flavor": "gpu-t4",
+  "quota_reserved_ts": 1788408464.0,
+  "admitted_ts": 1788408464.0,
+  "evictions": 0,
+  "eviction_reasons": []
+ }
+}

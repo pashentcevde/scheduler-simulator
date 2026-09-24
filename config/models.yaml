@@ -1,0 +1,88 @@
+runtime_overhead_gb: 2.0
+safety_margin: 0.10
+
+# множитель факта относительно raw-оценки
+actual_vram_noise: [0.85, 1.25]
+
+bytes_per_param:
+  fp16: 2.0
+  int8: 1.0
+  int4: 0.5
+
+models:
+  - id: qwen2.5-7b-instruct
+    params_b: 7
+    kv_gb_per_1k_ctx: 0.12
+    precisions: {int4: 0.3, int8: 0.3, fp16: 0.4}
+    contexts: {4096: 0.4, 8192: 0.4, 32768: 0.2}
+
+  - id: llama-3.1-8b-instruct
+    params_b: 8
+    kv_gb_per_1k_ctx: 0.13
+    precisions: {int4: 0.2, int8: 0.3, fp16: 0.5}
+    contexts: {8192: 0.5, 32768: 0.5}
+
+  - id: mistral-nemo-12b
+    params_b: 12
+    kv_gb_per_1k_ctx: 0.16
+    precisions: {int8: 0.4, fp16: 0.6}
+    contexts: {8192: 0.6, 32768: 0.4}
+
+  - id: qwen2.5-14b-instruct
+    params_b: 14
+    kv_gb_per_1k_ctx: 0.18
+    precisions: {int4: 0.2, int8: 0.3, fp16: 0.5}
+    contexts: {8192: 0.6, 32768: 0.4}
+
+  - id: gemma-2-27b-it
+    params_b: 27
+    kv_gb_per_1k_ctx: 0.28
+    precisions: {int8: 0.5, fp16: 0.5}
+    contexts: {8192: 0.7, 16384: 0.3}
+
+  - id: qwen2.5-32b-instruct
+    params_b: 32
+    kv_gb_per_1k_ctx: 0.32
+    precisions: {int4: 0.3, int8: 0.3, fp16: 0.4}
+    contexts: {8192: 0.6, 32768: 0.4}
+
+  - id: deepseek-r1-distill-qwen-32b
+    params_b: 32
+    kv_gb_per_1k_ctx: 0.32
+    precisions: {int8: 0.5, fp16: 0.5}
+    contexts: {16384: 0.5, 32768: 0.5}
+
+  - id: mixtral-8x7b-instruct
+    params_b: 47
+    kv_gb_per_1k_ctx: 0.20
+    precisions: {int4: 0.4, int8: 0.4, fp16: 0.2}
+    contexts: {8192: 0.7, 32768: 0.3}
+
+  - id: llama-3.3-70b-instruct
+    params_b: 70
+    kv_gb_per_1k_ctx: 0.32
+    precisions: {int4: 0.45, int8: 0.45, fp16: 0.1}
+    contexts: {8192: 0.6, 32768: 0.4}
+
+
+job_profiles:
+  - name: smoke               # прогрев/проверка конфигурации
+    weight: 0.15
+    duration_min: [10, 20]
+    gpu_util_pct: [5, 25]
+    startup_frac: [0.3, 0.6]
+  - name: eval                # прогон бенчмарка на фиксированном датасете
+    weight: 0.35
+    duration_min: [30, 90]
+    gpu_util_pct: [65, 95]
+    startup_frac: [0.05, 0.2]
+  - name: serving-session     # временный inference-эндпоинт
+    weight: 0.40
+    duration_min: [120, 360]
+    gpu_util_pct: [20, 60]
+    startup_frac: [0.02, 0.1]
+  - name: long-serving        # долгоживущий прод-эндпоинт
+    weight: 0.10
+    duration_min: [360, 720]
+    gpu_util_pct: [30, 70]
+    startup_frac: [0.01, 0.05]

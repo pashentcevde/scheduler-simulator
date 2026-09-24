@@ -1,0 +1,1 @@
+{"ts": 1788436845.8736587, "iso": "2026-09-03T12:00:45.940+00:00", "job_id": "b-0056-145845", "namespace": "team-b", "pod": "b-0056-145845-mnj2l", "node": "gpu-a100-40-1", "pool": "a100-40", "gpus": 1.0, "allocated_vram_gb": 36.8, "actual_vram_gb": 37.76, "overshoot_gb": 0.96, "wasted_seconds": 2.9}

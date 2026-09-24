@@ -1,0 +1,189 @@
+{
+ "run": "s02_asymmetric_demand-manual-20260903-135209",
+ "scenario": "s02_asymmetric_demand",
+ "placement": "manual",
+ "time_scale": 240.0,
+ "wall_seconds": 810.0,
+ "sim_hours": 54.003,
+ "gpu_capacity": 40.0,
+ "jobs_submitted": 229,
+ "jobs_started": 229,
+ "jobs_completed": 217,
+ "starved_jobs": 0,
+ "throughput_per_sim_hour": 4.02,
+ "wait_p50_sim_min": 0.0,
+ "wait_p90_sim_min": 524.8,
+ "wait_p99_sim_min": 2328.48,
+ "wait_mean_sim_min": 156.66,
+ "wait_total_sim_hours": 597.93,
+ "wait_over_threshold": {
+  "5": 82,
+  "15": 72,
+  "30": 59,
+  "60": 49,
+  "120": 44
+ },
+ "wait_hours_per_completed_job": 2.7555,
+ "gpu_utilization_mean": 0.3343,
+ "gpu_utilization_p90": 0.65,
+ "gpu_hours_allocated": 721.88,
+ "gpu_hours_available": 2160.13,
+ "idle_gpu_hours": 1438.25,
+ "borrowed_gpu_hours": 216.8,
+ "queue_depth_mean": 14.12,
+ "queue_depth_max": 38,
+ "frag_free_on_busy_mean": 4.06,
+ "preemptions": 48,
+ "eviction_reasons": {
+  "Preempted": 23
+ },
+ "cost_units": 2454.5,
+ "optimal_cost_units": 1867.2,
+ "planned_cost_units": 2431.0,
+ "preemption_wasted_cost_units": 23.5,
+ "cost_overhead_pct": 30.2,
+ "wasted_vram_gb_hours": 13293.3,
+ "oversized_jobs_pct": 34.5,
+ "oom_jobs": 12,
+ "oom_pct": 5.2,
+ "oom_wasted_gpu_hours": 2.3,
+ "oom_retries": 0,
+ "oom_vs_confidence": {
+  "threshold": 0.85,
+  "oom_confidence_mean": 0.227,
+  "oom_confidence_median": 0.0,
+  "oom_confidence_min": 0.0,
+  "oom_confidence_max": 0.798,
+  "ok_confidence_mean": 0.972,
+  "oom_below_threshold": 12,
+  "oom_above_threshold": 0,
+  "oom_recall_at_threshold": 100.0,
+  "risky_placements": 32,
+  "risky_precision_pct": 37.5,
+  "false_rejects": 20,
+  "predicted_oom_pct": 6.7,
+  "actual_oom_pct": 5.2,
+  "buckets": {
+   "0.0": {
+    "jobs": 7,
+    "oom": 7,
+    "actual_success": 0.0,
+    "predicted_success": 0.0
+   },
+   "0.3": {
+    "jobs": 3,
+    "oom": 2,
+    "actual_success": 0.333,
+    "predicted_success": 0.3
+   },
+   "0.6": {
+    "jobs": 6,
+    "oom": 1,
+    "actual_success": 0.833,
+    "predicted_success": 0.6
+   },
+   "0.7": {
+    "jobs": 8,
+    "oom": 1,
+    "actual_success": 0.875,
+    "predicted_success": 0.7
+   },
+   "0.8": {
+    "jobs": 8,
+    "oom": 1,
+    "actual_success": 0.875,
+    "predicted_success": 0.8
+   },
+   "0.9": {
+    "jobs": 2,
+    "oom": 0,
+    "actual_success": 1.0,
+    "predicted_success": 0.9
+   },
+   "1.0": {
+    "jobs": 195,
+    "oom": 0,
+    "actual_success": 1.0,
+    "predicted_success": 1.0
+   }
+  }
+ },
+ "efficiency_score_mean": 0.682,
+ "memory_score_mean": 0.58,
+ "power_score_mean": 0.529,
+ "underutilized_gpu_hours": 259.58,
+ "efficiency_score_weighted": 0.64,
+ "policy_changed_pct": 0.0,
+ "confidence_mean": 0.933,
+ "risky_placements_pct": 14.0,
+ "gpu_hours_by_pool": {
+  "l4": 111.94,
+  "t4": 165.07,
+  "a100-40": 137.92,
+  "a100-80": 179.1,
+  "h100": 50.81
+ },
+ "per_tenant": {
+  "a": {
+   "submitted": 103,
+   "completed": 99,
+   "starved": 0,
+   "wait_p50_sim_min": 4.0,
+   "wait_p90_sim_min": 124.0,
+   "wait_total_sim_hours": 141.93,
+   "gpu_hours": 360.13
+  },
+  "b": {
+   "submitted": 84,
+   "completed": 77,
+   "starved": 0,
+   "wait_p50_sim_min": 0.0,
+   "wait_p90_sim_min": 610.8,
+   "wait_total_sim_hours": 288.8,
+   "gpu_hours": 196.6
+  },
+  "c": {
+   "submitted": 42,
+   "completed": 41,
+   "starved": 0,
+   "wait_p50_sim_min": 0.0,
+   "wait_p90_sim_min": 637.6,
+   "wait_total_sim_hours": 167.2,
+   "gpu_hours": 88.13
+  }
+ },
+ "per_priority": {
+  "high": {
+   "submitted": 65,
+   "completed": 61,
+   "wait_p50_sim_min": 0.0,
+   "wait_p90_sim_min": 244.8,
+   "wait_p99_sim_min": 951.04,
+   "wait_total_sim_hours": 74.73
+  },
+  "low": {
+   "submitted": 45,
+   "completed": 43,
+   "wait_p50_sim_min": 16.0,
+   "wait_p90_sim_min": 1277.6,
+   "wait_p99_sim_min": 2574.88,
+   "wait_total_sim_hours": 250.73
+  },
+  "normal": {
+   "submitted": 75,
+   "completed": 69,
+   "wait_p50_sim_min": 4.0,
+   "wait_p90_sim_min": 621.6,
+   "wait_p99_sim_min": 2022.16,
+   "wait_total_sim_hours": 262.67
+  },
+  "production": {
+   "submitted": 44,
+   "completed": 44,
+   "wait_p50_sim_min": 4.0,
+   "wait_p90_sim_min": 41.2,
+   "wait_p99_sim_min": 144.96,
+   "wait_total_sim_hours": 9.8
+  }
+ }
+}

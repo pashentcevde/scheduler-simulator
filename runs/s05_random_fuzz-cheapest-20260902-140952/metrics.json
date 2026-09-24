@@ -1,0 +1,110 @@
+{
+ "run": "s05_random_fuzz-cheapest-20260902-140952",
+ "scenario": "s05_random_fuzz",
+ "placement": "cheapest",
+ "time_scale": 120.0,
+ "wall_seconds": 884.5,
+ "sim_hours": 29.482,
+ "gpu_capacity": 40.0,
+ "jobs_submitted": 248,
+ "jobs_started": 248,
+ "jobs_completed": 230,
+ "starved_jobs": 0,
+ "throughput_per_sim_hour": 7.8,
+ "wait_p50_sim_min": 4.13,
+ "wait_p90_sim_min": 114.13,
+ "wait_p99_sim_min": 392.53,
+ "wait_mean_sim_min": 36.86,
+ "gpu_utilization_mean": 0.4713,
+ "gpu_utilization_p90": 0.625,
+ "gpu_hours_allocated": 537.9,
+ "gpu_hours_available": 1179.29,
+ "idle_gpu_hours": 641.39,
+ "borrowed_gpu_hours": 172.9,
+ "queue_depth_mean": 6.82,
+ "queue_depth_max": 23,
+ "frag_free_on_busy_mean": 4.57,
+ "preemptions": 71,
+ "eviction_reasons": {
+  "Preempted": 42
+ },
+ "cost_units": 1534.4,
+ "optimal_cost_units": 1534.4,
+ "cost_overhead_pct": 0.0,
+ "wasted_vram_gb_hours": 6351.1,
+ "oversized_jobs_pct": 35.1,
+ "oom_jobs": 17,
+ "oom_pct": 6.9,
+ "oom_wasted_gpu_hours": 4.21,
+ "oom_retries": 0,
+ "efficiency_score_mean": 0.71,
+ "memory_score_mean": 0.666,
+ "power_score_mean": 0.543,
+ "underutilized_gpu_hours": 1.29,
+ "policy_changed_pct": 38.7,
+ "confidence_mean": 0.951,
+ "risky_placements_pct": 18.1,
+ "gpu_hours_by_pool": {
+  "a100-80": 94.0,
+  "t4": 269.22,
+  "a100-40": 42.46,
+  "l4": 196.16,
+  "h100": 16.05
+ },
+ "per_tenant": {
+  "a": {
+   "submitted": 110,
+   "completed": 103,
+   "starved": 0,
+   "wait_p50_sim_min": 4.18,
+   "wait_p90_sim_min": 154.31,
+   "gpu_hours": 308.58
+  },
+  "b": {
+   "submitted": 69,
+   "completed": 63,
+   "starved": 0,
+   "wait_p50_sim_min": 2.21,
+   "wait_p90_sim_min": 158.12,
+   "gpu_hours": 147.84
+  },
+  "c": {
+   "submitted": 69,
+   "completed": 64,
+   "starved": 0,
+   "wait_p50_sim_min": 6.23,
+   "wait_p90_sim_min": 88.73,
+   "gpu_hours": 161.32
+  }
+ },
+ "per_priority": {
+  "high": {
+   "submitted": 49,
+   "completed": 46,
+   "wait_p50_sim_min": 4.08,
+   "wait_p90_sim_min": 28.12,
+   "wait_p99_sim_min": 140.16
+  },
+  "low": {
+   "submitted": 55,
+   "completed": 48,
+   "wait_p50_sim_min": 20.15,
+   "wait_p90_sim_min": 127.03,
+   "wait_p99_sim_min": 437.63
+  },
+  "normal": {
+   "submitted": 96,
+   "completed": 91,
+   "wait_p50_sim_min": 3.62,
+   "wait_p90_sim_min": 193.15,
+   "wait_p99_sim_min": 294.76
+  },
+  "production": {
+   "submitted": 48,
+   "completed": 45,
+   "wait_p50_sim_min": 4.11,
+   "wait_p90_sim_min": 12.23,
+   "wait_p99_sim_min": 44.19
+  }
+ }
+}

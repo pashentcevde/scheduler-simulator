@@ -1,0 +1,61 @@
+# Описание модельного GPU-пула.
+
+defaults:
+  cpu_per_gpu: 8          
+  memory_gi_per_gpu: 32   
+  cpu_reserve: 8        
+  memory_gi_reserve: 32
+  pods_per_node: 64
+  usable_vram_fraction: 0.92
+
+pools:
+  - name: t4
+    product: NVIDIA-T4          
+    flavor: gpu-t4        
+    vram_gb: 16
+    tdp_w: 70
+    idle_w: 12
+    relative_cost: 1.0        
+    nodes: 5
+    gpus_per_node: 2
+
+  - name: l4
+    product: NVIDIA-L4
+    flavor: gpu-l4
+    vram_gb: 24
+    tdp_w: 72
+    idle_w: 12
+    relative_cost: 2.0
+    nodes: 5
+    gpus_per_node: 2
+
+  - name: a100-40
+    product: NVIDIA-A100-PCIE-40GB
+    flavor: gpu-a100-40
+    vram_gb: 40
+    tdp_w: 250
+    idle_w: 40
+    relative_cost: 3.5
+    nodes: 3
+    gpus_per_node: 2
+
+  - name: a100-80
+    product: NVIDIA-A100-SXM4-80GB
+    flavor: gpu-a100-80
+    vram_gb: 80
+    tdp_w: 300
+    idle_w: 45
+    relative_cost: 6.0
+    nodes: 3
+    gpus_per_node: 2
+
+  - name: h100
+    product: NVIDIA-H100-80GB-HBM3
+    flavor: gpu-h100
+    vram_gb: 80
+    tdp_w: 700
+    idle_w: 60
+    relative_cost: 10.0
+    nodes: 2
+    gpus_per_node: 4
+

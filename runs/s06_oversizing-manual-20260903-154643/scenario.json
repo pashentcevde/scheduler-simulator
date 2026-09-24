@@ -1,0 +1,98 @@
+{
+ "name": "s06_oversizing",
+ "description": "Завышенный запрос класса карты пользователями",
+ "seed": 2024,
+ "time_scale": 240,
+ "duration_sim_minutes": 720,
+ "max_jobs": 400,
+ "tenants_preset": "standard",
+ "tenant_overrides": {
+  "a": {
+   "oversize_prob": 0.8,
+   "undersize_prob": 0.0
+  },
+  "b": {
+   "oversize_prob": 0.8,
+   "undersize_prob": 0.0
+  },
+  "c": {
+   "oversize_prob": 0.7,
+   "undersize_prob": 0.0
+  }
+ },
+ "tenants": [
+  {
+   "id": "a",
+   "arrival_per_sim_hour": 3.3,
+   "priority_mix": {
+    "production": 0.5,
+    "high": 0.3,
+    "normal": 0.2
+   },
+   "oversize_prob": 0.8,
+   "undersize_prob": 0.0,
+   "model_mix": {
+    "qwen2.5-7b-instruct": 0.28,
+    "llama-3.1-8b-instruct": 0.25,
+    "qwen2.5-14b-instruct": 0.2,
+    "qwen2.5-32b-instruct": 0.12,
+    "mixtral-8x7b-instruct": 0.07,
+    "llama-3.3-70b-instruct": 0.08
+   },
+   "profile_mix": {
+    "smoke": 0.15,
+    "eval": 0.25,
+    "serving-session": 0.5,
+    "long-serving": 0.1
+   }
+  },
+  {
+   "id": "b",
+   "arrival_per_sim_hour": 3.3,
+   "priority_mix": {
+    "high": 0.3,
+    "normal": 0.5,
+    "low": 0.2
+   },
+   "oversize_prob": 0.8,
+   "undersize_prob": 0.0,
+   "model_mix": {
+    "qwen2.5-7b-instruct": 0.3,
+    "mistral-nemo-12b": 0.2,
+    "qwen2.5-14b-instruct": 0.2,
+    "gemma-2-27b-it": 0.12,
+    "deepseek-r1-distill-qwen-32b": 0.12,
+    "llama-3.3-70b-instruct": 0.06
+   },
+   "profile_mix": {
+    "smoke": 0.2,
+    "eval": 0.5,
+    "serving-session": 0.25,
+    "long-serving": 0.05
+   }
+  },
+  {
+   "id": "c",
+   "arrival_per_sim_hour": 2.3,
+   "priority_mix": {
+    "normal": 0.3,
+    "low": 0.7
+   },
+   "oversize_prob": 0.7,
+   "undersize_prob": 0.0,
+   "model_mix": {
+    "qwen2.5-7b-instruct": 0.4,
+    "llama-3.1-8b-instruct": 0.3,
+    "qwen2.5-32b-instruct": 0.2,
+    "mixtral-8x7b-instruct": 0.1
+   },
+   "profile_mix": {
+    "smoke": 0.15,
+    "eval": 0.6,
+    "serving-session": 0.25
+   }
+  }
+ ],
+ "placement": "manual",
+ "oom_retry_limit": 0
+}

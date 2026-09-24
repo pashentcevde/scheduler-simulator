@@ -1,0 +1,30 @@
+# Случайная нагрузка со рваным профилем.
+#
+# Проверка устойчивости конфигурации квот к неаккуратному потоку задач.
+# Для серии прогонов меняй seed: --seed 5
+name: s05_random_fuzz
+description: Случайная разнородная нагрузка, 24 сим-часа
+seed: 20240501
+time_scale: 240
+duration_sim_minutes: 1440
+max_jobs: 600
+tenants_preset: standard
+phases:
+  - from_sim_minute: 0
+    to_sim_minute: 180
+    rates: {a: 0.5, b: 3.0, c: 0.5}
+  - from_sim_minute: 180
+    to_sim_minute: 420
+    rates: {a: 2.8, b: 0.5, c: 1.5}
+  - from_sim_minute: 420
+    to_sim_minute: 600
+    rates: {a: 0.2, b: 0.2, c: 0.2}
+  - from_sim_minute: 600
+    to_sim_minute: 900
+    rates: {a: 2.0, b: 2.0, c: 2.0}
+  - from_sim_minute: 900
+    to_sim_minute: 1140
+    rates: {a: 0.8, b: 0.5, c: 2.2}
+  - from_sim_minute: 1140
+    to_sim_minute: 1440
+    rates: {a: 2.0, b: 1.5, c: 1.0}

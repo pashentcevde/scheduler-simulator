@@ -1,0 +1,7 @@
+{
+ "interval": 1.0,
+ "started_iso": "2026-09-03T04:30:04.193+00:00",
+ "started_ts": 1788409804.1929762,
+ "gpu_capacity": 40,
+ "nodes": 18
+}

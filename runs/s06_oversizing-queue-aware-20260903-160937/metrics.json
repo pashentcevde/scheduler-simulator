@@ -1,0 +1,177 @@
+{
+ "run": "s06_oversizing-queue-aware-20260903-160937",
+ "scenario": "s06_oversizing",
+ "placement": "queue-aware",
+ "time_scale": 240.0,
+ "wall_seconds": 347.7,
+ "sim_hours": 23.181,
+ "gpu_capacity": 40.0,
+ "jobs_submitted": 113,
+ "jobs_started": 113,
+ "jobs_completed": 111,
+ "starved_jobs": 0,
+ "throughput_per_sim_hour": 4.79,
+ "wait_p50_sim_min": 0.0,
+ "wait_p90_sim_min": 48.0,
+ "wait_p99_sim_min": 573.76,
+ "wait_mean_sim_min": 27.33,
+ "wait_total_sim_hours": 51.47,
+ "wait_over_threshold": {
+  "5": 25,
+  "15": 20,
+  "30": 15,
+  "60": 10,
+  "120": 5
+ },
+ "wait_hours_per_completed_job": 0.4637,
+ "gpu_utilization_mean": 0.4324,
+ "gpu_utilization_p90": 0.7,
+ "gpu_hours_allocated": 401.0,
+ "gpu_hours_available": 927.23,
+ "idle_gpu_hours": 526.23,
+ "borrowed_gpu_hours": 95.13,
+ "queue_depth_mean": 2.21,
+ "queue_depth_max": 9,
+ "frag_free_on_busy_mean": 6.18,
+ "preemptions": 4,
+ "eviction_reasons": {
+  "Preempted": 4
+ },
+ "cost_units": 1468.8,
+ "optimal_cost_units": 1271.9,
+ "planned_cost_units": 1444.7,
+ "preemption_wasted_cost_units": 24.0,
+ "cost_overhead_pct": 13.6,
+ "wasted_vram_gb_hours": 6079.4,
+ "oversized_jobs_pct": 75.2,
+ "oom_jobs": 2,
+ "oom_pct": 1.8,
+ "oom_wasted_gpu_hours": 0.39,
+ "oom_retries": 0,
+ "oom_vs_confidence": {
+  "threshold": 0.85,
+  "oom_confidence_mean": 0.784,
+  "oom_confidence_median": 0.784,
+  "oom_confidence_min": 0.771,
+  "oom_confidence_max": 0.798,
+  "ok_confidence_mean": 0.956,
+  "oom_below_threshold": 2,
+  "oom_above_threshold": 0,
+  "oom_recall_at_threshold": 100.0,
+  "risky_placements": 18,
+  "risky_precision_pct": 11.1,
+  "false_rejects": 16,
+  "predicted_oom_pct": 4.7,
+  "actual_oom_pct": 1.8,
+  "buckets": {
+   "0.6": {
+    "jobs": 2,
+    "oom": 0,
+    "actual_success": 1.0,
+    "predicted_success": 0.6
+   },
+   "0.7": {
+    "jobs": 7,
+    "oom": 0,
+    "actual_success": 1.0,
+    "predicted_success": 0.7
+   },
+   "0.8": {
+    "jobs": 9,
+    "oom": 2,
+    "actual_success": 0.778,
+    "predicted_success": 0.8
+   },
+   "0.9": {
+    "jobs": 7,
+    "oom": 0,
+    "actual_success": 1.0,
+    "predicted_success": 0.9
+   },
+   "1.0": {
+    "jobs": 88,
+    "oom": 0,
+    "actual_success": 1.0,
+    "predicted_success": 1.0
+   }
+  }
+ },
+ "efficiency_score_mean": 0.733,
+ "memory_score_mean": 0.665,
+ "power_score_mean": 0.599,
+ "underutilized_gpu_hours": 121.35,
+ "efficiency_score_weighted": 0.697,
+ "policy_changed_pct": 66.4,
+ "confidence_mean": 0.953,
+ "risky_placements_pct": 15.9,
+ "gpu_hours_by_pool": {
+  "l4": 92.29,
+  "t4": 134.16,
+  "a100-40": 48.06,
+  "a100-80": 81.87,
+  "h100": 49.07
+ },
+ "per_tenant": {
+  "a": {
+   "submitted": 43,
+   "completed": 43,
+   "starved": 0,
+   "wait_p50_sim_min": 0.0,
+   "wait_p90_sim_min": 11.2,
+   "wait_total_sim_hours": 5.2,
+   "gpu_hours": 230.73
+  },
+  "b": {
+   "submitted": 42,
+   "completed": 41,
+   "starved": 0,
+   "wait_p50_sim_min": 0.0,
+   "wait_p90_sim_min": 82.4,
+   "wait_total_sim_hours": 25.53,
+   "gpu_hours": 108.8
+  },
+  "c": {
+   "submitted": 28,
+   "completed": 27,
+   "starved": 0,
+   "wait_p50_sim_min": 0.0,
+   "wait_p90_sim_min": 31.6,
+   "wait_total_sim_hours": 20.73,
+   "gpu_hours": 65.87
+  }
+ },
+ "per_priority": {
+  "high": {
+   "submitted": 21,
+   "completed": 20,
+   "wait_p50_sim_min": 0.0,
+   "wait_p90_sim_min": 88.0,
+   "wait_p99_sim_min": 328.8,
+   "wait_total_sim_hours": 10.07
+  },
+  "low": {
+   "submitted": 29,
+   "completed": 28,
+   "wait_p50_sim_min": 0.0,
+   "wait_p90_sim_min": 179.2,
+   "wait_p99_sim_min": 608.8,
+   "wait_total_sim_hours": 35.53
+  },
+  "normal": {
+   "submitted": 35,
+   "completed": 35,
+   "wait_p50_sim_min": 0.0,
+   "wait_p90_sim_min": 12.8,
+   "wait_p99_sim_min": 50.32,
+   "wait_total_sim_hours": 2.67
+  },
+  "production": {
+   "submitted": 28,
+   "completed": 28,
+   "wait_p50_sim_min": 0.0,
+   "wait_p90_sim_min": 6.4,
+   "wait_p99_sim_min": 106.4,
+   "wait_total_sim_hours": 3.2
+  }
+ }
+}

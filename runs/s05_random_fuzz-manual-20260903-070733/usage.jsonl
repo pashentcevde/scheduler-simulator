@@ -1,0 +1,4 @@
+{"ts": 1788408463.3478904, "job_id": "b-0000-070733", "pod": "b-0000-070733-pxpdk", "node": "gpu-h100-1", "pool": "h100", "gpus": 1.0, "vram_gb": 23.93, "vram_allocated_gb": 73.6, "watts": 74.2, "watts_reserved": 700.0, "util_pct": 2.2}
+{"ts": 1788408464.3482904, "job_id": "b-0000-070733", "pod": "b-0000-070733-pxpdk", "node": "gpu-h100-1", "pool": "h100", "gpus": 1.0, "vram_gb": 34.57, "vram_allocated_gb": 73.6, "watts": 84.7, "watts_reserved": 700.0, "util_pct": 3.9}
+{"ts": 1788408465.348407, "job_id": "b-0000-070733", "pod": "b-0000-070733-pxpdk", "node": "gpu-h100-1", "pool": "h100", "gpus": 1.0, "vram_gb": 45.21, "vram_allocated_gb": 73.6, "watts": 95.2, "watts_reserved": 700.0, "util_pct": 5.5}
+{"ts": 1788408465.348407, "job_id": "b-0001-070733", "pod": "b-0001-070733-pnn74", "node": "gpu-t4-0", "pool": "t4", "gpus": 2.0, "vram_gb": 7.54, "vram_allocated_gb": 29.44, "watts": 26.5, "watts_reserved": 140.0, "util_pct": 2.1}

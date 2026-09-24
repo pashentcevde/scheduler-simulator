@@ -1,0 +1,26 @@
+# Долгие задачи против коротких.
+#
+# Половина потока — многочасовые long-serving эндпоинты, половина — минутные
+# smoke-прогоны. Долгие занимают карты надолго и вымывают короткие;
+# короткие при этом почти не используют выделенное (большая доля startup).
+# Сценарий одновременно про справедливость очереди и про скоринг
+# недоутилизации из "Задачи #3".
+name: s11_long_vs_short
+description: Долгоживущие эндпоинты вперемешку с минутными прогонами
+seed: 4242
+time_scale: 240
+duration_sim_minutes: 720
+max_jobs: 400
+tenants_preset: standard
+tenant_overrides:
+  a:
+    arrival_per_sim_hour: 2.0
+    profile_mix: {smoke: 0.05, long-serving: 0.95}
+    model_mix: {qwen2.5-7b-instruct: 0.4, llama-3.1-8b-instruct: 0.4, qwen2.5-14b-instruct: 0.2}
+  b:
+    arrival_per_sim_hour: 6.6
+    profile_mix: {smoke: 0.9, eval: 0.1}
+  c:
+    arrival_per_sim_hour: 2.0
+    profile_mix: {smoke: 0.5, long-serving: 0.5}
+    model_mix: {qwen2.5-7b-instruct: 0.6, llama-3.1-8b-instruct: 0.4}

@@ -1,0 +1,934 @@
+apiVersion: v1
+kind: Node
+metadata:
+  name: gpu-t4-0
+  annotations:
+    node.alpha.kubernetes.io/ttl: '0'
+    kwok.x-k8s.io/node: fake
+  labels:
+    beta.kubernetes.io/arch: amd64
+    beta.kubernetes.io/os: linux
+    kubernetes.io/arch: amd64
+    kubernetes.io/os: linux
+    kubernetes.io/hostname: gpu-t4-0
+    kubernetes.io/role: agent
+    node-role.kubernetes.io/agent: ''
+    type: kwok
+    nvidia.com/gpu.product: NVIDIA-T4
+    nvidia.com/gpu.count: '2'
+    nvidia.com/gpu.memory: '16384'
+    lab.skalar.ai/gpu-pool: t4
+spec:
+  taints:
+  - key: kwok.x-k8s.io/node
+    value: fake
+    effect: NoSchedule
+status:
+  allocatable:
+    cpu: '24'
+    memory: 96Gi
+    pods: '64'
+    nvidia.com/gpu: '2'
+    ephemeral-storage: 1Ti
+  capacity:
+    cpu: '24'
+    memory: 96Gi
+    pods: '64'
+    nvidia.com/gpu: '2'
+    ephemeral-storage: 1Ti
+  nodeInfo:
+    architecture: amd64
+    bootID: ''
+    containerRuntimeVersion: ''
+    kernelVersion: ''
+    kubeProxyVersion: fake
+    kubeletVersion: fake
+    machineID: ''
+    operatingSystem: linux
+    osImage: ''
+    systemUUID: ''
+  phase: Running
+
+---
+apiVersion: v1
+kind: Node
+metadata:
+  name: gpu-t4-1
+  annotations:
+    node.alpha.kubernetes.io/ttl: '0'
+    kwok.x-k8s.io/node: fake
+  labels:
+    beta.kubernetes.io/arch: amd64
+    beta.kubernetes.io/os: linux
+    kubernetes.io/arch: amd64
+    kubernetes.io/os: linux
+    kubernetes.io/hostname: gpu-t4-1
+    kubernetes.io/role: agent
+    node-role.kubernetes.io/agent: ''
+    type: kwok
+    nvidia.com/gpu.product: NVIDIA-T4
+    nvidia.com/gpu.count: '2'
+    nvidia.com/gpu.memory: '16384'
+    lab.skalar.ai/gpu-pool: t4
+spec:
+  taints:
+  - key: kwok.x-k8s.io/node
+    value: fake
+    effect: NoSchedule
+status:
+  allocatable:
+    cpu: '24'
+    memory: 96Gi
+    pods: '64'
+    nvidia.com/gpu: '2'
+    ephemeral-storage: 1Ti
+  capacity:
+    cpu: '24'
+    memory: 96Gi
+    pods: '64'
+    nvidia.com/gpu: '2'
+    ephemeral-storage: 1Ti
+  nodeInfo:
+    architecture: amd64
+    bootID: ''
+    containerRuntimeVersion: ''
+    kernelVersion: ''
+    kubeProxyVersion: fake
+    kubeletVersion: fake
+    machineID: ''
+    operatingSystem: linux
+    osImage: ''
+    systemUUID: ''
+  phase: Running
+
+---
+apiVersion: v1
+kind: Node
+metadata:
+  name: gpu-t4-2
+  annotations:
+    node.alpha.kubernetes.io/ttl: '0'
+    kwok.x-k8s.io/node: fake
+  labels:
+    beta.kubernetes.io/arch: amd64
+    beta.kubernetes.io/os: linux
+    kubernetes.io/arch: amd64
+    kubernetes.io/os: linux
+    kubernetes.io/hostname: gpu-t4-2
+    kubernetes.io/role: agent
+    node-role.kubernetes.io/agent: ''
+    type: kwok
+    nvidia.com/gpu.product: NVIDIA-T4
+    nvidia.com/gpu.count: '2'
+    nvidia.com/gpu.memory: '16384'
+    lab.skalar.ai/gpu-pool: t4
+spec:
+  taints:
+  - key: kwok.x-k8s.io/node
+    value: fake
+    effect: NoSchedule
+status:
+  allocatable:
+    cpu: '24'
+    memory: 96Gi
+    pods: '64'
+    nvidia.com/gpu: '2'
+    ephemeral-storage: 1Ti
+  capacity:
+    cpu: '24'
+    memory: 96Gi
+    pods: '64'
+    nvidia.com/gpu: '2'
+    ephemeral-storage: 1Ti
+  nodeInfo:
+    architecture: amd64
+    bootID: ''
+    containerRuntimeVersion: ''
+    kernelVersion: ''
+    kubeProxyVersion: fake
+    kubeletVersion: fake
+    machineID: ''
+    operatingSystem: linux
+    osImage: ''
+    systemUUID: ''
+  phase: Running
+
+---
+apiVersion: v1
+kind: Node
+metadata:
+  name: gpu-t4-3
+  annotations:
+    node.alpha.kubernetes.io/ttl: '0'
+    kwok.x-k8s.io/node: fake
+  labels:
+    beta.kubernetes.io/arch: amd64
+    beta.kubernetes.io/os: linux
+    kubernetes.io/arch: amd64
+    kubernetes.io/os: linux
+    kubernetes.io/hostname: gpu-t4-3
+    kubernetes.io/role: agent
+    node-role.kubernetes.io/agent: ''
+    type: kwok
+    nvidia.com/gpu.product: NVIDIA-T4
+    nvidia.com/gpu.count: '2'
+    nvidia.com/gpu.memory: '16384'
+    lab.skalar.ai/gpu-pool: t4
+spec:
+  taints:
+  - key: kwok.x-k8s.io/node
+    value: fake
+    effect: NoSchedule
+status:
+  allocatable:
+    cpu: '24'
+    memory: 96Gi
+    pods: '64'
+    nvidia.com/gpu: '2'
+    ephemeral-storage: 1Ti
+  capacity:
+    cpu: '24'
+    memory: 96Gi
+    pods: '64'
+    nvidia.com/gpu: '2'
+    ephemeral-storage: 1Ti
+  nodeInfo:
+    architecture: amd64
+    bootID: ''
+    containerRuntimeVersion: ''
+    kernelVersion: ''
+    kubeProxyVersion: fake
+    kubeletVersion: fake
+    machineID: ''
+    operatingSystem: linux
+    osImage: ''
+    systemUUID: ''
+  phase: Running
+
+---
+apiVersion: v1
+kind: Node
+metadata:
+  name: gpu-t4-4
+  annotations:
+    node.alpha.kubernetes.io/ttl: '0'
+    kwok.x-k8s.io/node: fake
+  labels:
+    beta.kubernetes.io/arch: amd64
+    beta.kubernetes.io/os: linux
+    kubernetes.io/arch: amd64
+    kubernetes.io/os: linux
+    kubernetes.io/hostname: gpu-t4-4
+    kubernetes.io/role: agent
+    node-role.kubernetes.io/agent: ''
+    type: kwok
+    nvidia.com/gpu.product: NVIDIA-T4
+    nvidia.com/gpu.count: '2'
+    nvidia.com/gpu.memory: '16384'
+    lab.skalar.ai/gpu-pool: t4
+spec:
+  taints:
+  - key: kwok.x-k8s.io/node
+    value: fake
+    effect: NoSchedule
+status:
+  allocatable:
+    cpu: '24'
+    memory: 96Gi
+    pods: '64'
+    nvidia.com/gpu: '2'
+    ephemeral-storage: 1Ti
+  capacity:
+    cpu: '24'
+    memory: 96Gi
+    pods: '64'
+    nvidia.com/gpu: '2'
+    ephemeral-storage: 1Ti
+  nodeInfo:
+    architecture: amd64
+    bootID: ''
+    containerRuntimeVersion: ''
+    kernelVersion: ''
+    kubeProxyVersion: fake
+    kubeletVersion: fake
+    machineID: ''
+    operatingSystem: linux
+    osImage: ''
+    systemUUID: ''
+  phase: Running
+
+---
+apiVersion: v1
+kind: Node
+metadata:
+  name: gpu-l4-0
+  annotations:
+    node.alpha.kubernetes.io/ttl: '0'
+    kwok.x-k8s.io/node: fake
+  labels:
+    beta.kubernetes.io/arch: amd64
+    beta.kubernetes.io/os: linux
+    kubernetes.io/arch: amd64
+    kubernetes.io/os: linux
+    kubernetes.io/hostname: gpu-l4-0
+    kubernetes.io/role: agent
+    node-role.kubernetes.io/agent: ''
+    type: kwok
+    nvidia.com/gpu.product: NVIDIA-L4
+    nvidia.com/gpu.count: '2'
+    nvidia.com/gpu.memory: '24576'
+    lab.skalar.ai/gpu-pool: l4
+spec:
+  taints:
+  - key: kwok.x-k8s.io/node
+    value: fake
+    effect: NoSchedule
+status:
+  allocatable:
+    cpu: '24'
+    memory: 96Gi
+    pods: '64'
+    nvidia.com/gpu: '2'
+    ephemeral-storage: 1Ti
+  capacity:
+    cpu: '24'
+    memory: 96Gi
+    pods: '64'
+    nvidia.com/gpu: '2'
+    ephemeral-storage: 1Ti
+  nodeInfo:
+    architecture: amd64
+    bootID: ''
+    containerRuntimeVersion: ''
+    kernelVersion: ''
+    kubeProxyVersion: fake
+    kubeletVersion: fake
+    machineID: ''
+    operatingSystem: linux
+    osImage: ''
+    systemUUID: ''
+  phase: Running
+
+---
+apiVersion: v1
+kind: Node
+metadata:
+  name: gpu-l4-1
+  annotations:
+    node.alpha.kubernetes.io/ttl: '0'
+    kwok.x-k8s.io/node: fake
+  labels:
+    beta.kubernetes.io/arch: amd64
+    beta.kubernetes.io/os: linux
+    kubernetes.io/arch: amd64
+    kubernetes.io/os: linux
+    kubernetes.io/hostname: gpu-l4-1
+    kubernetes.io/role: agent
+    node-role.kubernetes.io/agent: ''
+    type: kwok
+    nvidia.com/gpu.product: NVIDIA-L4
+    nvidia.com/gpu.count: '2'
+    nvidia.com/gpu.memory: '24576'
+    lab.skalar.ai/gpu-pool: l4
+spec:
+  taints:
+  - key: kwok.x-k8s.io/node
+    value: fake
+    effect: NoSchedule
+status:
+  allocatable:
+    cpu: '24'
+    memory: 96Gi
+    pods: '64'
+    nvidia.com/gpu: '2'
+    ephemeral-storage: 1Ti
+  capacity:
+    cpu: '24'
+    memory: 96Gi
+    pods: '64'
+    nvidia.com/gpu: '2'
+    ephemeral-storage: 1Ti
+  nodeInfo:
+    architecture: amd64
+    bootID: ''
+    containerRuntimeVersion: ''
+    kernelVersion: ''
+    kubeProxyVersion: fake
+    kubeletVersion: fake
+    machineID: ''
+    operatingSystem: linux
+    osImage: ''
+    systemUUID: ''
+  phase: Running
+
+---
+apiVersion: v1
+kind: Node
+metadata:
+  name: gpu-l4-2
+  annotations:
+    node.alpha.kubernetes.io/ttl: '0'
+    kwok.x-k8s.io/node: fake
+  labels:
+    beta.kubernetes.io/arch: amd64
+    beta.kubernetes.io/os: linux
+    kubernetes.io/arch: amd64
+    kubernetes.io/os: linux
+    kubernetes.io/hostname: gpu-l4-2
+    kubernetes.io/role: agent
+    node-role.kubernetes.io/agent: ''
+    type: kwok
+    nvidia.com/gpu.product: NVIDIA-L4
+    nvidia.com/gpu.count: '2'
+    nvidia.com/gpu.memory: '24576'
+    lab.skalar.ai/gpu-pool: l4
+spec:
+  taints:
+  - key: kwok.x-k8s.io/node
+    value: fake
+    effect: NoSchedule
+status:
+  allocatable:
+    cpu: '24'
+    memory: 96Gi
+    pods: '64'
+    nvidia.com/gpu: '2'
+    ephemeral-storage: 1Ti
+  capacity:
+    cpu: '24'
+    memory: 96Gi
+    pods: '64'
+    nvidia.com/gpu: '2'
+    ephemeral-storage: 1Ti
+  nodeInfo:
+    architecture: amd64
+    bootID: ''
+    containerRuntimeVersion: ''
+    kernelVersion: ''
+    kubeProxyVersion: fake
+    kubeletVersion: fake
+    machineID: ''
+    operatingSystem: linux
+    osImage: ''
+    systemUUID: ''
+  phase: Running
+
+---
+apiVersion: v1
+kind: Node
+metadata:
+  name: gpu-l4-3
+  annotations:
+    node.alpha.kubernetes.io/ttl: '0'
+    kwok.x-k8s.io/node: fake
+  labels:
+    beta.kubernetes.io/arch: amd64
+    beta.kubernetes.io/os: linux
+    kubernetes.io/arch: amd64
+    kubernetes.io/os: linux
+    kubernetes.io/hostname: gpu-l4-3
+    kubernetes.io/role: agent
+    node-role.kubernetes.io/agent: ''
+    type: kwok
+    nvidia.com/gpu.product: NVIDIA-L4
+    nvidia.com/gpu.count: '2'
+    nvidia.com/gpu.memory: '24576'
+    lab.skalar.ai/gpu-pool: l4
+spec:
+  taints:
+  - key: kwok.x-k8s.io/node
+    value: fake
+    effect: NoSchedule
+status:
+  allocatable:
+    cpu: '24'
+    memory: 96Gi
+    pods: '64'
+    nvidia.com/gpu: '2'
+    ephemeral-storage: 1Ti
+  capacity:
+    cpu: '24'
+    memory: 96Gi
+    pods: '64'
+    nvidia.com/gpu: '2'
+    ephemeral-storage: 1Ti
+  nodeInfo:
+    architecture: amd64
+    bootID: ''
+    containerRuntimeVersion: ''
+    kernelVersion: ''
+    kubeProxyVersion: fake
+    kubeletVersion: fake
+    machineID: ''
+    operatingSystem: linux
+    osImage: ''
+    systemUUID: ''
+  phase: Running
+
+---
+apiVersion: v1
+kind: Node
+metadata:
+  name: gpu-l4-4
+  annotations:
+    node.alpha.kubernetes.io/ttl: '0'
+    kwok.x-k8s.io/node: fake
+  labels:
+    beta.kubernetes.io/arch: amd64
+    beta.kubernetes.io/os: linux
+    kubernetes.io/arch: amd64
+    kubernetes.io/os: linux
+    kubernetes.io/hostname: gpu-l4-4
+    kubernetes.io/role: agent
+    node-role.kubernetes.io/agent: ''
+    type: kwok
+    nvidia.com/gpu.product: NVIDIA-L4
+    nvidia.com/gpu.count: '2'
+    nvidia.com/gpu.memory: '24576'
+    lab.skalar.ai/gpu-pool: l4
+spec:
+  taints:
+  - key: kwok.x-k8s.io/node
+    value: fake
+    effect: NoSchedule
+status:
+  allocatable:
+    cpu: '24'
+    memory: 96Gi
+    pods: '64'
+    nvidia.com/gpu: '2'
+    ephemeral-storage: 1Ti
+  capacity:
+    cpu: '24'
+    memory: 96Gi
+    pods: '64'
+    nvidia.com/gpu: '2'
+    ephemeral-storage: 1Ti
+  nodeInfo:
+    architecture: amd64
+    bootID: ''
+    containerRuntimeVersion: ''
+    kernelVersion: ''
+    kubeProxyVersion: fake
+    kubeletVersion: fake
+    machineID: ''
+    operatingSystem: linux
+    osImage: ''
+    systemUUID: ''
+  phase: Running
+
+---
+apiVersion: v1
+kind: Node
+metadata:
+  name: gpu-a100-40-0
+  annotations:
+    node.alpha.kubernetes.io/ttl: '0'
+    kwok.x-k8s.io/node: fake
+  labels:
+    beta.kubernetes.io/arch: amd64
+    beta.kubernetes.io/os: linux
+    kubernetes.io/arch: amd64
+    kubernetes.io/os: linux
+    kubernetes.io/hostname: gpu-a100-40-0
+    kubernetes.io/role: agent
+    node-role.kubernetes.io/agent: ''
+    type: kwok
+    nvidia.com/gpu.product: NVIDIA-A100-PCIE-40GB
+    nvidia.com/gpu.count: '2'
+    nvidia.com/gpu.memory: '40960'
+    lab.skalar.ai/gpu-pool: a100-40
+spec:
+  taints:
+  - key: kwok.x-k8s.io/node
+    value: fake
+    effect: NoSchedule
+status:
+  allocatable:
+    cpu: '24'
+    memory: 96Gi
+    pods: '64'
+    nvidia.com/gpu: '2'
+    ephemeral-storage: 1Ti
+  capacity:
+    cpu: '24'
+    memory: 96Gi
+    pods: '64'
+    nvidia.com/gpu: '2'
+    ephemeral-storage: 1Ti
+  nodeInfo:
+    architecture: amd64
+    bootID: ''
+    containerRuntimeVersion: ''
+    kernelVersion: ''
+    kubeProxyVersion: fake
+    kubeletVersion: fake
+    machineID: ''
+    operatingSystem: linux
+    osImage: ''
+    systemUUID: ''
+  phase: Running
+
+---
+apiVersion: v1
+kind: Node
+metadata:
+  name: gpu-a100-40-1
+  annotations:
+    node.alpha.kubernetes.io/ttl: '0'
+    kwok.x-k8s.io/node: fake
+  labels:
+    beta.kubernetes.io/arch: amd64
+    beta.kubernetes.io/os: linux
+    kubernetes.io/arch: amd64
+    kubernetes.io/os: linux
+    kubernetes.io/hostname: gpu-a100-40-1
+    kubernetes.io/role: agent
+    node-role.kubernetes.io/agent: ''
+    type: kwok
+    nvidia.com/gpu.product: NVIDIA-A100-PCIE-40GB
+    nvidia.com/gpu.count: '2'
+    nvidia.com/gpu.memory: '40960'
+    lab.skalar.ai/gpu-pool: a100-40
+spec:
+  taints:
+  - key: kwok.x-k8s.io/node
+    value: fake
+    effect: NoSchedule
+status:
+  allocatable:
+    cpu: '24'
+    memory: 96Gi
+    pods: '64'
+    nvidia.com/gpu: '2'
+    ephemeral-storage: 1Ti
+  capacity:
+    cpu: '24'
+    memory: 96Gi
+    pods: '64'
+    nvidia.com/gpu: '2'
+    ephemeral-storage: 1Ti
+  nodeInfo:
+    architecture: amd64
+    bootID: ''
+    containerRuntimeVersion: ''
+    kernelVersion: ''
+    kubeProxyVersion: fake
+    kubeletVersion: fake
+    machineID: ''
+    operatingSystem: linux
+    osImage: ''
+    systemUUID: ''
+  phase: Running
+
+---
+apiVersion: v1
+kind: Node
+metadata:
+  name: gpu-a100-40-2
+  annotations:
+    node.alpha.kubernetes.io/ttl: '0'
+    kwok.x-k8s.io/node: fake
+  labels:
+    beta.kubernetes.io/arch: amd64
+    beta.kubernetes.io/os: linux
+    kubernetes.io/arch: amd64
+    kubernetes.io/os: linux
+    kubernetes.io/hostname: gpu-a100-40-2
+    kubernetes.io/role: agent
+    node-role.kubernetes.io/agent: ''
+    type: kwok
+    nvidia.com/gpu.product: NVIDIA-A100-PCIE-40GB
+    nvidia.com/gpu.count: '2'
+    nvidia.com/gpu.memory: '40960'
+    lab.skalar.ai/gpu-pool: a100-40
+spec:
+  taints:
+  - key: kwok.x-k8s.io/node
+    value: fake
+    effect: NoSchedule
+status:
+  allocatable:
+    cpu: '24'
+    memory: 96Gi
+    pods: '64'
+    nvidia.com/gpu: '2'
+    ephemeral-storage: 1Ti
+  capacity:
+    cpu: '24'
+    memory: 96Gi
+    pods: '64'
+    nvidia.com/gpu: '2'
+    ephemeral-storage: 1Ti
+  nodeInfo:
+    architecture: amd64
+    bootID: ''
+    containerRuntimeVersion: ''
+    kernelVersion: ''
+    kubeProxyVersion: fake
+    kubeletVersion: fake
+    machineID: ''
+    operatingSystem: linux
+    osImage: ''
+    systemUUID: ''
+  phase: Running
+
+---
+apiVersion: v1
+kind: Node
+metadata:
+  name: gpu-a100-80-0
+  annotations:
+    node.alpha.kubernetes.io/ttl: '0'
+    kwok.x-k8s.io/node: fake
+  labels:
+    beta.kubernetes.io/arch: amd64
+    beta.kubernetes.io/os: linux
+    kubernetes.io/arch: amd64
+    kubernetes.io/os: linux
+    kubernetes.io/hostname: gpu-a100-80-0
+    kubernetes.io/role: agent
+    node-role.kubernetes.io/agent: ''
+    type: kwok
+    nvidia.com/gpu.product: NVIDIA-A100-SXM4-80GB
+    nvidia.com/gpu.count: '2'
+    nvidia.com/gpu.memory: '81920'
+    lab.skalar.ai/gpu-pool: a100-80
+spec:
+  taints:
+  - key: kwok.x-k8s.io/node
+    value: fake
+    effect: NoSchedule
+status:
+  allocatable:
+    cpu: '24'
+    memory: 96Gi
+    pods: '64'
+    nvidia.com/gpu: '2'
+    ephemeral-storage: 1Ti
+  capacity:
+    cpu: '24'
+    memory: 96Gi
+    pods: '64'
+    nvidia.com/gpu: '2'
+    ephemeral-storage: 1Ti
+  nodeInfo:
+    architecture: amd64
+    bootID: ''
+    containerRuntimeVersion: ''
+    kernelVersion: ''
+    kubeProxyVersion: fake
+    kubeletVersion: fake
+    machineID: ''
+    operatingSystem: linux
+    osImage: ''
+    systemUUID: ''
+  phase: Running
+
+---
+apiVersion: v1
+kind: Node
+metadata:
+  name: gpu-a100-80-1
+  annotations:
+    node.alpha.kubernetes.io/ttl: '0'
+    kwok.x-k8s.io/node: fake
+  labels:
+    beta.kubernetes.io/arch: amd64
+    beta.kubernetes.io/os: linux
+    kubernetes.io/arch: amd64
+    kubernetes.io/os: linux
+    kubernetes.io/hostname: gpu-a100-80-1
+    kubernetes.io/role: agent
+    node-role.kubernetes.io/agent: ''
+    type: kwok
+    nvidia.com/gpu.product: NVIDIA-A100-SXM4-80GB
+    nvidia.com/gpu.count: '2'
+    nvidia.com/gpu.memory: '81920'
+    lab.skalar.ai/gpu-pool: a100-80
+spec:
+  taints:
+  - key: kwok.x-k8s.io/node
+    value: fake
+    effect: NoSchedule
+status:
+  allocatable:
+    cpu: '24'
+    memory: 96Gi
+    pods: '64'
+    nvidia.com/gpu: '2'
+    ephemeral-storage: 1Ti
+  capacity:
+    cpu: '24'
+    memory: 96Gi
+    pods: '64'
+    nvidia.com/gpu: '2'
+    ephemeral-storage: 1Ti
+  nodeInfo:
+    architecture: amd64
+    bootID: ''
+    containerRuntimeVersion: ''
+    kernelVersion: ''
+    kubeProxyVersion: fake
+    kubeletVersion: fake
+    machineID: ''
+    operatingSystem: linux
+    osImage: ''
+    systemUUID: ''
+  phase: Running
+
+---
+apiVersion: v1
+kind: Node
+metadata:
+  name: gpu-a100-80-2
+  annotations:
+    node.alpha.kubernetes.io/ttl: '0'
+    kwok.x-k8s.io/node: fake
+  labels:
+    beta.kubernetes.io/arch: amd64
+    beta.kubernetes.io/os: linux
+    kubernetes.io/arch: amd64
+    kubernetes.io/os: linux
+    kubernetes.io/hostname: gpu-a100-80-2
+    kubernetes.io/role: agent
+    node-role.kubernetes.io/agent: ''
+    type: kwok
+    nvidia.com/gpu.product: NVIDIA-A100-SXM4-80GB
+    nvidia.com/gpu.count: '2'
+    nvidia.com/gpu.memory: '81920'
+    lab.skalar.ai/gpu-pool: a100-80
+spec:
+  taints:
+  - key: kwok.x-k8s.io/node
+    value: fake
+    effect: NoSchedule
+status:
+  allocatable:
+    cpu: '24'
+    memory: 96Gi
+    pods: '64'
+    nvidia.com/gpu: '2'
+    ephemeral-storage: 1Ti
+  capacity:
+    cpu: '24'
+    memory: 96Gi
+    pods: '64'
+    nvidia.com/gpu: '2'
+    ephemeral-storage: 1Ti
+  nodeInfo:
+    architecture: amd64
+    bootID: ''
+    containerRuntimeVersion: ''
+    kernelVersion: ''
+    kubeProxyVersion: fake
+    kubeletVersion: fake
+    machineID: ''
+    operatingSystem: linux
+    osImage: ''
+    systemUUID: ''
+  phase: Running
+
+---
+apiVersion: v1
+kind: Node
+metadata:
+  name: gpu-h100-0
+  annotations:
+    node.alpha.kubernetes.io/ttl: '0'
+    kwok.x-k8s.io/node: fake
+  labels:
+    beta.kubernetes.io/arch: amd64
+    beta.kubernetes.io/os: linux
+    kubernetes.io/arch: amd64
+    kubernetes.io/os: linux
+    kubernetes.io/hostname: gpu-h100-0
+    kubernetes.io/role: agent
+    node-role.kubernetes.io/agent: ''
+    type: kwok
+    nvidia.com/gpu.product: NVIDIA-H100-80GB-HBM3
+    nvidia.com/gpu.count: '4'
+    nvidia.com/gpu.memory: '81920'
+    lab.skalar.ai/gpu-pool: h100
+spec:
+  taints:
+  - key: kwok.x-k8s.io/node
+    value: fake
+    effect: NoSchedule
+status:
+  allocatable:
+    cpu: '40'
+    memory: 160Gi
+    pods: '64'
+    nvidia.com/gpu: '4'
+    ephemeral-storage: 1Ti
+  capacity:
+    cpu: '40'
+    memory: 160Gi
+    pods: '64'
+    nvidia.com/gpu: '4'
+    ephemeral-storage: 1Ti
+  nodeInfo:
+    architecture: amd64
+    bootID: ''
+    containerRuntimeVersion: ''
+    kernelVersion: ''
+    kubeProxyVersion: fake
+    kubeletVersion: fake
+    machineID: ''
+    operatingSystem: linux
+    osImage: ''
+    systemUUID: ''
+  phase: Running
+
+---
+apiVersion: v1
+kind: Node
+metadata:
+  name: gpu-h100-1
+  annotations:
+    node.alpha.kubernetes.io/ttl: '0'
+    kwok.x-k8s.io/node: fake
+  labels:
+    beta.kubernetes.io/arch: amd64
+    beta.kubernetes.io/os: linux
+    kubernetes.io/arch: amd64
+    kubernetes.io/os: linux
+    kubernetes.io/hostname: gpu-h100-1
+    kubernetes.io/role: agent
+    node-role.kubernetes.io/agent: ''
+    type: kwok
+    nvidia.com/gpu.product: NVIDIA-H100-80GB-HBM3
+    nvidia.com/gpu.count: '4'
+    nvidia.com/gpu.memory: '81920'
+    lab.skalar.ai/gpu-pool: h100
+spec:
+  taints:
+  - key: kwok.x-k8s.io/node
+    value: fake
+    effect: NoSchedule
+status:
+  allocatable:
+    cpu: '40'
+    memory: 160Gi
+    pods: '64'
+    nvidia.com/gpu: '4'
+    ephemeral-storage: 1Ti
+  capacity:
+    cpu: '40'
+    memory: 160Gi
+    pods: '64'
+    nvidia.com/gpu: '4'
+    ephemeral-storage: 1Ti
+  nodeInfo:
+    architecture: amd64
+    bootID: ''
+    containerRuntimeVersion: ''
+    kernelVersion: ''
+    kubeProxyVersion: fake
+    kubeletVersion: fake
+    machineID: ''
+    operatingSystem: linux
+    osImage: ''
+    systemUUID: ''
+  phase: Running

@@ -1,0 +1,183 @@
+{
+ "run": "s03_priority_burst-manual-20260903-145523",
+ "scenario": "s03_priority_burst",
+ "placement": "manual",
+ "time_scale": 240.0,
+ "wall_seconds": 185.6,
+ "sim_hours": 12.375,
+ "gpu_capacity": 40.0,
+ "jobs_submitted": 60,
+ "jobs_started": 60,
+ "jobs_completed": 55,
+ "starved_jobs": 0,
+ "throughput_per_sim_hour": 4.44,
+ "wait_p50_sim_min": 0.0,
+ "wait_p90_sim_min": 0.0,
+ "wait_p99_sim_min": 70.32,
+ "wait_mean_sim_min": 3.0,
+ "wait_total_sim_hours": 3.0,
+ "wait_over_threshold": {
+  "5": 2,
+  "15": 1,
+  "30": 1,
+  "60": 1,
+  "120": 1
+ },
+ "wait_hours_per_completed_job": 0.0545,
+ "gpu_utilization_mean": 0.2622,
+ "gpu_utilization_p90": 0.425,
+ "gpu_hours_allocated": 129.9,
+ "gpu_hours_available": 494.98,
+ "idle_gpu_hours": 365.08,
+ "borrowed_gpu_hours": 19.27,
+ "queue_depth_mean": 0.3,
+ "queue_depth_max": 3,
+ "frag_free_on_busy_mean": 7.27,
+ "preemptions": 1,
+ "eviction_reasons": {
+  "Preempted": 1
+ },
+ "cost_units": 524.0,
+ "optimal_cost_units": 379.3,
+ "planned_cost_units": 525.0,
+ "preemption_wasted_cost_units": 0.0,
+ "cost_overhead_pct": 38.4,
+ "wasted_vram_gb_hours": 2937.5,
+ "oversized_jobs_pct": 38.3,
+ "oom_jobs": 5,
+ "oom_pct": 8.3,
+ "oom_wasted_gpu_hours": 1.31,
+ "oom_retries": 0,
+ "oom_vs_confidence": {
+  "threshold": 0.85,
+  "oom_confidence_mean": 0.16,
+  "oom_confidence_median": 0.0,
+  "oom_confidence_min": 0.0,
+  "oom_confidence_max": 0.798,
+  "ok_confidence_mean": 0.977,
+  "oom_below_threshold": 5,
+  "oom_above_threshold": 0,
+  "oom_recall_at_threshold": 100.0,
+  "risky_placements": 10,
+  "risky_precision_pct": 50.0,
+  "false_rejects": 5,
+  "predicted_oom_pct": 9.1,
+  "actual_oom_pct": 8.3,
+  "buckets": {
+   "0.0": {
+    "jobs": 4,
+    "oom": 4,
+    "actual_success": 0.0,
+    "predicted_success": 0.0
+   },
+   "0.6": {
+    "jobs": 1,
+    "oom": 0,
+    "actual_success": 1.0,
+    "predicted_success": 0.6
+   },
+   "0.7": {
+    "jobs": 1,
+    "oom": 0,
+    "actual_success": 1.0,
+    "predicted_success": 0.7
+   },
+   "0.8": {
+    "jobs": 4,
+    "oom": 1,
+    "actual_success": 0.75,
+    "predicted_success": 0.8
+   },
+   "0.9": {
+    "jobs": 1,
+    "oom": 0,
+    "actual_success": 1.0,
+    "predicted_success": 0.9
+   },
+   "1.0": {
+    "jobs": 49,
+    "oom": 0,
+    "actual_success": 1.0,
+    "predicted_success": 1.0
+   }
+  }
+ },
+ "efficiency_score_mean": 0.697,
+ "memory_score_mean": 0.611,
+ "power_score_mean": 0.536,
+ "underutilized_gpu_hours": 45.32,
+ "efficiency_score_weighted": 0.651,
+ "policy_changed_pct": 0.0,
+ "confidence_mean": 0.909,
+ "risky_placements_pct": 16.7,
+ "gpu_hours_by_pool": {
+  "h100": 16.99,
+  "l4": 31.67,
+  "a100-80": 28.53,
+  "t4": 29.87,
+  "a100-40": 25.6
+ },
+ "per_tenant": {
+  "a": {
+   "submitted": 15,
+   "completed": 13,
+   "starved": 0,
+   "wait_p50_sim_min": 0.0,
+   "wait_p90_sim_min": 0.0,
+   "wait_total_sim_hours": 0.0,
+   "gpu_hours": 47.47
+  },
+  "b": {
+   "submitted": 22,
+   "completed": 20,
+   "starved": 0,
+   "wait_p50_sim_min": 0.0,
+   "wait_p90_sim_min": 0.0,
+   "wait_total_sim_hours": 0.2,
+   "gpu_hours": 37.47
+  },
+  "c": {
+   "submitted": 23,
+   "completed": 22,
+   "starved": 0,
+   "wait_p50_sim_min": 0.0,
+   "wait_p90_sim_min": 3.2,
+   "wait_total_sim_hours": 2.8,
+   "gpu_hours": 47.73
+  }
+ },
+ "per_priority": {
+  "high": {
+   "submitted": 13,
+   "completed": 10,
+   "wait_p50_sim_min": 0.0,
+   "wait_p90_sim_min": 0.0,
+   "wait_p99_sim_min": 3.52,
+   "wait_total_sim_hours": 0.07
+  },
+  "low": {
+   "submitted": 15,
+   "completed": 14,
+   "wait_p50_sim_min": 0.0,
+   "wait_p90_sim_min": 2.4,
+   "wait_p99_sim_min": 4.0,
+   "wait_total_sim_hours": 0.13
+  },
+  "normal": {
+   "submitted": 27,
+   "completed": 26,
+   "wait_p50_sim_min": 0.0,
+   "wait_p90_sim_min": 0.0,
+   "wait_p99_sim_min": 120.48,
+   "wait_total_sim_hours": 2.8
+  },
+  "production": {
+   "submitted": 5,
+   "completed": 5,
+   "wait_p50_sim_min": 0.0,
+   "wait_p90_sim_min": 0.0,
+   "wait_p99_sim_min": 0.0,
+   "wait_total_sim_hours": 0.0
+  }
+ }
+}
